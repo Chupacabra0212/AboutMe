@@ -1,6 +1,7 @@
 body {
-  background: orange;
+  background: linear-gradient(to right, navy 33.3%, darkblue 33.3%, blue 33.3%);
 }
+
 header {
   text-align: center;
 }
