@@ -4,7 +4,88 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Jose Ruvalcaba</title>
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>I am Jose Jaime Ruvalcaba Blancas</h1>
+      <h2>Who is Jose?</h2>
+      <h3>
+        Jose is a intern for cycle 12 at i.c. stars |*. He is 23 years old and
+        loves to snowboard.
+      </h3>
+      <img src = './headshot/Headshot.PNG'>
+    </header>
+    <main>
+      <ul>
+        <li>
+          <a target="_blank" href="https://www.icstars.org/">i.c. stars |*</a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.linkedin.com/in/jjrb12/">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.easytyger.info/">
+            Jose's Favorite Food Spot</a
+          >
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://myanimelist.net/animelist/Ruvalcaba12?status=7&order=4&order2=0"
+            >Jose's Anime List</a
+          >
+        </li>
+      </ul>
+    </main>
+<floor>
+      <button id="aboutMe">About The Author</button>
+      <p class="paragraph"></p>
+      <p class="paragraph2"></p>
+      <img class="im" width="30%" />
+    </div>
+    <script>
+    
+      const aboutMe = document.getElementById("aboutMe");
+      
+      console.log(aboutMe);
+
+      aboutMe.addEventListener("click", function () {
+        const paragraph = document.querySelector(".paragraph");
+        /// parageraph
+        const stringStatement = "Hello World";
+        const stringName = "Jose Ruvalcaba";
+        const num = 23;
+        paragraph.innerText = `${stringStatement} my name is ${stringName} and I am ${num}`;
+
+        ///img
+        const img = document.querySelector(".img");
+        // console.log(img);
+        img.src = imageSource;
+      });
+      console.log("Hello");
+    </script>
+
+    <p id="day"></p>
+
+    <script>
+      const todaysDate = new Date().getDate();
+      let greeting;
+      console.log(todaysDate);
+
+      if (todaysDate % 2 === 0) {
+        console.log(true);
+        greeting = "Happy Even Day";
+      } else {
+        console.log(false);
+        greeting = "Happy Odd Day";
+      }
+
+      document.getElementById("day").innerHTML = greeting;
+    </script>
+    </floor>
+  </body>
 </html>
